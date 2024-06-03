@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .birthday-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6699;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    position: relative;
+  }
+  
+  .birthday-card:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(to bottom right, #ff6699, #ffcc99);
+    border-radius: 20px;
+    z-index: -1;
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  
+  .birthday-card:hover:before {
+    opacity: 1;
+  }
+  
+  .birthday-card h1 {
+    margin: 0 0 10px;
+  }
+  
+  .birthday-card p {
+    margin: 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ffcc99;
+    border: none;
+    border-radius: 5px;
+    color: #7e5807;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
